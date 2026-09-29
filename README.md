@@ -54,51 +54,6 @@ The current implementation provides the following major functional modules:
 - Exception handling (`try-except`)
 - Git and GitHub for version control
 
-## System Workflow
-
-The application follows this basic workflow:
-
-```text
-Start
-  |
-  v
-Expense Tracker Main Menu
-  |
-  +---- 1. Add Expense
-  |
-  +---- 2. View Expenses
-  |
-  +---- 3. Calculate Total Expenses
-  |
-  +---- 4. Category-wise Expenses
-  |
-  +---- 5. Delete Expense
-  |
-  +---- 6. Exit
-  |
-  v
-Perform Selected Operation
-  |
-  v
-Return to Main Menu
-```
-
-## Data Structure
-
-Expenses are stored during program execution in a Python list named `expenses`.
-
-Each expense is represented using a dictionary containing:
-
-```python
-{
-    "category": category,
-    "amount": amount,
-    "date": date
-}
-```
-
-Therefore, the project currently uses an **in-memory data structure**. No external database or permanent file storage is used in the current version.
-
 ## Installation and Setup
 
 ### Prerequisites
@@ -192,20 +147,6 @@ The project can be tested manually by running the program and checking each menu
 | Delete invalid number | Enter a number outside the list | Invalid expense number message is displayed |
 | Exit | Select option 6 | Program exits |
 
-## Non-Functional Requirements
-
-### 1. Usability
-The application uses a simple menu-driven interface so that a beginner can understand and operate it easily.
-
-### 2. Reliability
-The program uses input validation and `try-except` handling to reduce failures caused by invalid user input.
-
-### 3. Maintainability
-The application is divided into separate functions such as `add_expense()`, `view_expenses()`, `calculate_total_expenses()`, `category_wise_expenses()`, and `delete_expense()`.
-
-### 4. Resource Efficiency
-The application uses simple Python lists and dictionaries and performs basic calculations without requiring external services or heavy resources.
-
 ## Project Scope
 
 The current project focuses on basic personal expense management through a console application. It is suitable for recording expenses during a program session, viewing them, calculating totals, checking category-wise spending, and deleting records.
@@ -247,5 +188,5 @@ This project is relevant to a Python programming course because it demonstrates 
 
 ## Author
 
-**Student Project – VITyarthi Build Your Own Project**
+**Expense Tracker Project – By Yashwant Parmar**
 
